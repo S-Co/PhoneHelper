@@ -1,2 +1,4 @@
-# PhoneHelper
-phonehelper
+# PhoneHelper 手机助手
+这是一个手机管理软件，很早就做了，最近想到了把他分享出来。
+##基于android 4.4开发，5.0及以上请绕道。。。。。
+
