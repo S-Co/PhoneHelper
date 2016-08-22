@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <ImageView
+        android:id="@+id/hardware_phone_item_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/red"
+        android:contentDescription="@string/hardware_phone_items_icon"
+        android:src="@drawable/setting_info_icon_camera" />
+
+    <TextView
+        android:id="@+id/hardware_phone_item_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/hardware_phone_item_iv"
+        android:layout_toRightOf="@id/hardware_phone_item_iv"
+        android:text="@string/hardware_phone_item_top"
+        android:textColor="@color/phone_item_textcolor"
+        android:textSize="@dimen/hardware_battery_item_top" />
+
+    <TextView
+        android:id="@+id/hardware_phone_item_buttom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/hardware_phone_item_iv"
+        android:layout_toRightOf="@id/hardware_phone_item_iv"
+        android:text="@string/hardware_phone_item_buttom"
+        android:textColor="@color/phone_item_textcolor"
+        android:textSize="@dimen/hardware_battery_item_buttom" />
+
+</RelativeLayout>

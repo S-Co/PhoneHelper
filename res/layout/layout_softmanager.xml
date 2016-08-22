@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/layout_softmanager_ab"
+        layout="@layout/layout_action_bar" />
+
+    <LinearLayout
+        android:id="@+id/layout_softmanager_l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/layout_softmanager_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" />
+
+        <Button
+            android:id="@+id/layout_softmanager_uninstall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/phone_clean_selector"
+            android:text="@string/soft_manager_uninstall"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layout_softmanager_l1"
+        android:layout_below="@id/layout_softmanager_ab" >
+
+        <ProgressBar
+            android:visibility="visible"
+            android:id="@+id/layout_softmanager_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <ListView
+            android:id="@+id/layout_softmanager_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible" >
+        </ListView>
+    </FrameLayout>
+
+</RelativeLayout>

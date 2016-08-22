@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/home_entry_item_normal"
+    android:orientation="vertical" >
+
+    <!-- 第一排 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/home_item_rocket"
+            style="@style/homepage_items"
+            android:drawableTop="@drawable/icon_rocket"
+            android:text="@string/home_rocket" />
+
+        <TextView
+            android:id="@+id/home_item_software"
+            style="@style/homepage_items"
+            android:drawableTop="@drawable/icon_softmgr"
+            android:text="@string/home_software" />
+
+        <TextView
+            android:id="@+id/home_item_hardware"
+            style="@style/homepage_items"
+            android:drawableTop="@drawable/icon_phonemgr"
+            android:text="@string/home_hardware" />
+    </LinearLayout>
+    <!-- 第二排 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/home_item_contacts"
+            style="@style/homepage_items"
+            android:drawableTop="@drawable/icon_telmgr"
+            android:text="@string/home_contacts" />
+
+        <TextView
+            android:id="@+id/home_item_filemanage"
+            style="@style/homepage_items"
+            android:drawableTop="@drawable/icon_filemgr"
+            android:text="@string/home_filemanage" />
+
+        <TextView
+            android:id="@+id/home_item_sdcardclean"
+            style="@style/homepage_items"
+            android:drawableTop="@drawable/icon_sdclean"
+            android:text="@string/home_sdcardclean" />
+    </LinearLayout>
+
+</LinearLayout>

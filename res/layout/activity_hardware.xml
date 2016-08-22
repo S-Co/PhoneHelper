@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 顶部的ActionBar -->
+
+    <include layout="@layout/layout_action_bar" />
+    <!-- 电池相关控件 -->
+
+    <LinearLayout
+        android:id="@+id/hardware_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="20dp" >
+
+        <!-- 电池主体的progressBar -->
+
+        <ProgressBar
+            android:id="@+id/hardware_battery"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:max="100"
+            android:progress="80"
+            android:progressDrawable="@drawable/hardware_battery_bg" />
+        <!-- 电池顶端的View -->
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="60dp"
+            android:layout_weight="0"
+            android:background="@color/hardware_battery_bg" />
+        <!-- 电量文本 -->
+
+        <TextView
+            android:id="@+id/hardware_battery_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:paddingLeft="10dp"
+            android:text="@string/hardware_battery_text" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/hardware_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/gray"
+        android:dividerHeight="3dp" >
+    </ListView>
+
+</LinearLayout>

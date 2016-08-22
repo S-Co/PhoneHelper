@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 没选中即OFF时 -->
+    <item android:drawable="@drawable/check_switch_off" 
+        android:state_checked="false"></item>
+	<!-- 选中的时候即ON时 -->
+    <item android:drawable="@drawable/check_switch_on"
+        android:state_checked="true"></item>
+    
+</selector>

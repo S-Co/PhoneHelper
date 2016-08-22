@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 开机启动 -->
+
+    <RelativeLayout style="@style/setting_item" >
+
+        <TextView
+            style="@style/setting_item_textview"
+            android:text="@string/setting_item1" />
+
+        <ToggleButton
+            android:id="@+id/setting_toggle_item1"
+            style="@style/setting_item_togglebutton" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/home_score_normal_bg" />
+
+    <!-- 通知图标 -->
+
+    <RelativeLayout style="@style/setting_item" >
+
+        <TextView
+            style="@style/setting_item_textview"
+            android:text="@string/setting_item2" />
+
+        <ToggleButton
+            android:id="@+id/setting_toggle_item2"
+            style="@style/setting_item_togglebutton" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/home_score_normal_bg" />
+
+    <!-- 消息推送 -->
+
+    <RelativeLayout style="@style/setting_item" >
+
+        <TextView
+            style="@style/setting_item_textview"
+            android:text="@string/setting_item3" />
+
+        <ToggleButton
+            android:id="@+id/setting_toggle_item3"
+            style="@style/setting_item_togglebutton" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/home_score_normal_bg" />
+    <!-- 帮助说明 -->
+
+    <RelativeLayout style="@style/setting_item" >
+
+        <TextView
+            style="@style/setting_item_textview"
+            android:text="@string/setting_item4" />
+
+        <ImageView
+            style="@style/setting_item_imageview"
+            android:contentDescription="@string/setting_item4" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/home_score_normal_bg" />
+    <!-- 意见反馈 -->
+    <RelativeLayout style="@style/setting_item" >
+
+        <TextView
+            style="@style/setting_item_textview"
+            android:text="@string/setting_item5" />
+
+        <ImageView
+            style="@style/setting_item_imageview"
+            android:contentDescription="@string/setting_item4" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/home_score_normal_bg" />
+    <!-- 好友分享 -->
+    <RelativeLayout style="@style/setting_item" >
+
+        <TextView
+            style="@style/setting_item_textview"
+            android:text="@string/setting_item6" />
+
+        <ImageView
+            style="@style/setting_item_imageview"
+            android:contentDescription="@string/setting_item4" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/home_score_normal_bg" />
+    <!-- 版本更新 -->
+    <RelativeLayout style="@style/setting_item" >
+
+        <TextView
+            style="@style/setting_item_textview"
+            android:text="@string/setting_item7" />
+
+        <ImageView
+            style="@style/setting_item_imageview"
+            android:contentDescription="@string/setting_item4" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/home_score_normal_bg" />
+    <!-- 关于我们 -->
+<RelativeLayout style="@style/setting_item" >
+
+        <TextView
+            style="@style/setting_item_textview"
+            android:text="@string/setting_item8" />
+
+        <ImageView
+            android:id="@+id/setting_item8"
+            style="@style/setting_item_imageview"
+            android:contentDescription="@string/setting_item4" />
+    </RelativeLayout>
+</LinearLayout>

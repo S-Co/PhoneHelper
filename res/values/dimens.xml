@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="guide_icons_maginbutton">60dip</dimen>
+    <!-- 导航页面icon的尺寸 -->
+    <dimen name="guide_icon_width">10dip</dimen>
+    <dimen name="guide_icon_height">10dip</dimen>
+    <dimen name="guide_icon_magin">5dip</dimen>
+	<!-- ActionBar -->
+	<dimen name="actionbar_height">40dp</dimen>
+	<dimen name="actionbar_icon_width">36dp</dimen>
+	<dimen name="actionbar_title_size">20sp</dimen>
+	<!-- home_item-->
+	<dimen name="home_item_textviewsize">14sp</dimen>
+	<!-- layoutScore -->
+	<dimen name="home_score_arcview_layout_width">216dp</dimen>
+	<dimen name="home_score_arcview_layout_height">216dp</dimen>
+	<dimen name="home_score_imageview_layout_width">210dp</dimen>
+	<dimen name="home_score_imageview_layout_height">210dp</dimen>
+	<dimen name="home_scoretext_preview_layout_marginTop">-150dp</dimen>
+	<dimen name="home_scoretext_preview_textSize">64sp</dimen>
+	<dimen name="home_scoretext_start_textSize">20sp</dimen>
+	<!-- contacts -->
+	<dimen name="contacts_text_size">20sp</dimen>
+	<!-- detailcontact -->
+	<dimen name="detail_contact_name_size">20sp</dimen>
+	<dimen name="detail_contact_number_size">16sp</dimen>
+	<!-- hardware_battery_dialog_tittle -->
+	<dimen name="hardware_battery_dialog_tittle">20sp</dimen>
+	<dimen name="hardware_battery_item_top">17sp</dimen>
+	<dimen name="hardware_battery_item_buttom">17sp</dimen>
+	<!-- phone_speed -->
+	<dimen name="phone_speed_brand_size">20sp</dimen>
+	<dimen name="phone_speed_name_size">17sp</dimen>
+</resources>

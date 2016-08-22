@@ -1,0 +1,128 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:theme">@android:style/Theme.Light.NoTitleBar</item>
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <!-- HomePage的选项 -->
+    <style name="homepage_items">
+        <item name="android:background">@drawable/actionbar_icon_selector</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/home_item_textviewsize</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:onClick">homeItemHit</item>
+    </style>
+    <!-- setting里面的相对布风格 -->
+    <style name="setting_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/actionbar_icon_selector</item>
+    </style>
+    <!-- Setting的文本风格 -->
+    <style name="setting_item_textview">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!-- Settings的togglebutton风格 -->
+
+    <style name="setting_item_togglebutton">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/check_switch</item>
+        <item name="android:textOn"></item>
+        <item name="android:textOff"></item>
+    </style>
+
+    <!-- Setting的imageView风格 -->
+    <style name="setting_item_imageview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:src">@drawable/ic_arrows_right</item>
+    </style>
+    <!-- 文件管理的style -->
+    <style name="file_manager_content_name">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="file_manager_content_size">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:text">@string/file_manager_file_priview</item>
+        <item name="android:textStyle">bold|italic</item>
+    </style>
+
+    <style name="file_manager_linearnlayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:background">@drawable/filemanager_selector</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+
+    <style name="file_manager_viewstyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">@color/gray</item>
+    </style>
+
+    <style name="file_manager_image_style">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:src">@drawable/ic_arrows_right</item>
+    </style>
+
+    <style name="file_manager_progress_style">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:indeterminateOnly">true</item>
+        <item name="android:indeterminateDuration">600</item>
+        <item name="android:indeterminateBehavior">repeat</item>
+        <item name="android:indeterminateDrawable">@drawable/progressbar_rotate</item>
+        <item name="android:visibility">visible</item>
+    </style>
+
+</resources>

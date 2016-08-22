@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_action_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@color/blue" >
+
+        <TextView
+            android:id="@+id/file_manager_file_priview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/file_manager_file_priview"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/file_manager_file_priview"
+            android:layout_toLeftOf="@id/file_manager_file_priview"
+            android:text="@string/file_manager_file_title"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/file_manager_l1"
+                style="@style/file_manager_linearnlayoutStyle" >
+
+                <TextView
+                    style="@style/file_manager_content_name"
+                    android:text="@string/file_manager_allfile" />
+
+                <TextView
+                    android:id="@+id/file_manager_allfile"
+                    style="@style/file_manager_content_size" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ProgressBar
+                        android:id="@+id/file_manager_l1_progress"
+                        style="@style/file_manager_progress_style" />
+
+                    <ImageView
+                        android:id="@+id/file_manager_l1_imageview"
+                        style="@style/file_manager_image_style"
+                        android:contentDescription="@string/file_manager_arrowsdescribe" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View style="@style/file_manager_viewstyle" />
+
+            <LinearLayout
+                android:id="@+id/file_manager_l2"
+                style="@style/file_manager_linearnlayoutStyle" >
+
+                <TextView
+                    style="@style/file_manager_content_name"
+                    android:text="@string/file_manager_file" />
+
+                <TextView
+                    android:id="@+id/file_manager_file"
+                    style="@style/file_manager_content_size" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ProgressBar
+                        android:id="@+id/file_manager_l2_progress"
+                        style="@style/file_manager_progress_style" />
+
+                    <ImageView
+                        android:id="@+id/file_manager_l2_imageview"
+                        style="@style/file_manager_image_style"
+                        android:contentDescription="@string/file_manager_arrowsdescribe" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View style="@style/file_manager_viewstyle" />
+
+            <LinearLayout
+                android:id="@+id/file_manager_l3"
+                style="@style/file_manager_linearnlayoutStyle" >
+
+                <TextView
+                    style="@style/file_manager_content_name"
+                    android:text="@string/file_manager_video" />
+
+                <TextView
+                    android:id="@+id/file_manager_video"
+                    style="@style/file_manager_content_size" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ProgressBar
+                        android:id="@+id/file_manager_l3_progress"
+                        style="@style/file_manager_progress_style" />
+
+                    <ImageView
+                        android:id="@+id/file_manager_l3_imageview"
+                        style="@style/file_manager_image_style"
+                        android:contentDescription="@string/file_manager_arrowsdescribe" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View style="@style/file_manager_viewstyle" />
+
+            <LinearLayout
+                android:id="@+id/file_manager_l4"
+                style="@style/file_manager_linearnlayoutStyle" >
+
+                <TextView
+                    style="@style/file_manager_content_name"
+                    android:text="@string/file_manager_audio" />
+
+                <TextView
+                    android:id="@+id/file_manager_audio"
+                    style="@style/file_manager_content_size" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ProgressBar
+                        android:id="@+id/file_manager_l4_progress"
+                        style="@style/file_manager_progress_style" />
+
+                    <ImageView
+                        android:id="@+id/file_manager_l4_imageview"
+                        style="@style/file_manager_image_style"
+                        android:contentDescription="@string/file_manager_arrowsdescribe" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View style="@style/file_manager_viewstyle" />
+
+            <LinearLayout
+                android:id="@+id/file_manager_l5"
+                style="@style/file_manager_linearnlayoutStyle" >
+
+                <TextView
+                    style="@style/file_manager_content_name"
+                    android:text="@string/file_manager_image" />
+
+                <TextView
+                    android:id="@+id/file_manager_image"
+                    style="@style/file_manager_content_size" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ProgressBar
+                        android:id="@+id/file_manager_l5_progress"
+                        style="@style/file_manager_progress_style" />
+
+                    <ImageView
+                        android:id="@+id/file_manager_l5_imageview"
+                        style="@style/file_manager_image_style"
+                        android:contentDescription="@string/file_manager_arrowsdescribe" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View style="@style/file_manager_viewstyle" />
+
+            <LinearLayout
+                android:id="@+id/file_manager_l6"
+                style="@style/file_manager_linearnlayoutStyle" >
+
+                <TextView
+                    style="@style/file_manager_content_name"
+                    android:text="@string/file_manager_zip" />
+
+                <TextView
+                    android:id="@+id/file_manager_zip"
+                    style="@style/file_manager_content_size" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ProgressBar
+                        android:id="@+id/file_manager_l6_progress"
+                        style="@style/file_manager_progress_style" />
+
+                    <ImageView
+                        android:id="@+id/file_manager_l6_imageview"
+                        style="@style/file_manager_image_style"
+                        android:contentDescription="@string/file_manager_arrowsdescribe" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View style="@style/file_manager_viewstyle" />
+
+            <LinearLayout
+                android:id="@+id/file_manager_l7"
+                style="@style/file_manager_linearnlayoutStyle" >
+
+                <TextView
+                    style="@style/file_manager_content_name"
+                    android:text="@string/file_manager_app" />
+
+                <TextView
+                    android:id="@+id/file_manager_app"
+                    style="@style/file_manager_content_size" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ProgressBar
+                        android:id="@+id/file_manager_l7_progress"
+                        style="@style/file_manager_progress_style" />
+
+                    <ImageView
+                        android:id="@+id/file_manager_l7_imageview"
+                        style="@style/file_manager_image_style"
+                        android:contentDescription="@string/file_manager_arrowsdescribe" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View style="@style/file_manager_viewstyle" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

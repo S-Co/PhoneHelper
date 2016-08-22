@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/phone_speed_brand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/phone_brand"
+        android:textColor="@color/light_white"
+        android:textSize="@dimen/phone_speed_brand_size" />
+
+    <TextView
+        android:id="@+id/phone_speed_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_speed_brand"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="@string/phone_name"
+        android:textColor="@color/light_white"
+        android:textSize="@dimen/phone_speed_name_size" />
+
+    <TextView
+        android:id="@+id/phone_speed_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_speed_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="@string/phone_version" />
+    <!-- 待会修改背景 -->
+
+    <ProgressBar
+        android:id="@+id/phone_speed_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_speed_version"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:max="100"
+        android:progress="50"
+        android:progressDrawable="@drawable/phone_speed_progre" />
+
+    <TextView
+        android:id="@+id/phone_speed_memory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/phone_speed_progress"
+        android:layout_below="@id/phone_speed_progress"
+        android:layout_marginTop="5dp"
+        android:text="@string/phone_memory" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/phone_speed_memory"
+        android:layout_marginTop="5dp"
+        android:background="@color/light_white" />
+
+    <Button
+        android:id="@+id/phone_speed_cleanbtn"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/phone_speed_memory"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/phone_clean_selector"
+        android:text="@string/phone_cleanbtn" />
+
+    <View
+        android:id="@+id/phone_speed_view"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/phone_speed_cleanbtn"
+        android:layout_marginTop="10dp"
+        android:background="@color/light_white" />
+
+    <RelativeLayout
+        android:id="@+id/phone_speed_relativelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+
+        <CheckBox
+            android:id="@+id/phone_speed_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" />
+
+        <Button
+            android:id="@+id/phone_showprobtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignTop="@id/phone_speed_checkbox"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_toRightOf="@id/phone_speed_checkbox"
+            android:background="@drawable/phone_clean_selector"
+            android:text="@string/phone_showprogeress" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/phone_speed_relativelayout"
+        android:layout_below="@id/phone_speed_view" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:id="@+id/phone_speed_buttom_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateDuration="600"
+            android:indeterminateBehavior="repeat"
+          	android:indeterminateDrawable="@drawable/progressbar_rotate"
+            android:indeterminateOnly="true"
+            android:layout_gravity="center" />
+        <!-- 用户进程 -->
+
+        <ListView
+            android:id="@+id/phone_speed_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible" >
+        </ListView>
+        <!-- 系统进程 -->
+    </FrameLayout>
+
+</RelativeLayout>

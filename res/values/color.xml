@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!-- 黄色 -->
+<color name="yellow_light">#ffff8c00</color>
+    <!-- 白色 -->
+    <color name="white">#ffffffff</color>
+    <!-- 黑色 -->
+    <color name="black">#ff000000</color>
+    <!-- 红色 -->
+    <color name="red">#ffff0000</color>
+    <!-- 绿色 -->
+    <color name="green1">#ff99ff00</color>
+    <color name="green2">#ff66ff00</color>
+    <color name="green3">#ff33ff00</color>
+    <color name="green4">#ff33ff66</color>
+    <color name="green5">#ff00ff33</color>
+    <color name="green6">#ff00ff66</color>
+    <color name="green7">#ff00ff99</color>
+    <color name="green8">#ff00ffcc</color>
+    <!-- 灰色 -->
+    <color name="gray">#88888888</color>
+    <!-- 淡黄色 -->
+    <color name="yellow">#ffffffcc</color>
+    <!-- hard_battery_bg -->
+    <color name="hardware_battery_bg">#ffffffcc</color>
+    <color name="hardware_battery_progress">#ff00ff00</color>
+    <!-- 淡黄色 -->
+    <color name="light_white">#ff00ff99</color>
+    <!-- 淡粉色 -->
+    <color name="phone_item_textcolor">#aaff3333</color>
+    <color name="blue">#ff0000ff</color>
+    <!-- softmanager颜色 -->
+    <color name="softmanager_inside">#ffff0038</color>
+    <color name="softmanager_outside">#ff660099</color>
+	<color name="tea_green">#ff339900</color>
+</resources>

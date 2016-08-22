@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <CheckBox
+        android:id="@+id/layout_softmanager_item_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <ImageView
+        android:id="@+id/layout_soft_manager_item_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:contentDescription="@string/layout_soft_manager_item_image_describe"
+        android:src="@color/gray" />
+
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/layout_soft_manager_item_appname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/layout_soft_manager_item_appname" />
+
+        <TextView
+            android:textSize="13sp"
+            android:id="@+id/layout_soft_manager_item_packgename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/layout_soft_manager_item_packgename" />
+    </LinearLayout>
+
+    <TextView
+        android:textSize="13sp"
+  		android:layout_gravity="center_vertical"
+        android:id="@+id/layout_soft_manager_item_appversion"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="bottom"
+        android:text="@string/layout_soft_manager_item_appversion" />
+
+</LinearLayout>

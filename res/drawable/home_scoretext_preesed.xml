@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+  <!-- 加速文本被按下去时的颜色 -->
+    <corners android:radius="8dp"/>
+	<solid android:color="#ffaa7799"/>
+</shape>

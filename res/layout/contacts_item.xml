@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <!-- 
+    android:descendantFocusability的该属性是当一个为view获取焦点时，
+    定义viewGroup和其子控件两者之间的关系。
+	android:descendantFocusability的属性值有三种：
+	beforeDescendants：viewgroup会优先其子类控件而获取到焦点
+	afterDescendants：viewgroup只有当其子类控件不需要获取焦点时才获取焦点
+	blocksDescendants：viewgroup会覆盖子类控件而直接获得焦点
+     -->
+    <TextView
+        android:id="@+id/yellow_activity_textview"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:descendantFocusability="blocksDescendants"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/contacts_text_size" />
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@id/home_item"
+    android:layout_below="@id/action_bar"
+    android:background="@drawable/home_entry_item_normal" >
+
+    <com.example.phonehelper.framework.view.CleanArcView
+        android:id="@+id/home_score_arcview"
+        android:layout_width="@dimen/home_score_arcview_layout_width"
+        android:layout_height="@dimen/home_score_arcview_layout_height"
+        android:layout_centerInParent="true" />
+
+    <ImageView
+        android:id="@+id/home_score_imageview"
+        android:layout_width="@dimen/home_score_imageview_layout_width"
+        android:layout_height="@dimen/home_score_imageview_layout_height"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/home_score_imageview"
+        android:src="@drawable/home_score_selector" />
+
+    <TextView
+        android:id="@+id/home_scoretext_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/home_score_arcview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/home_scoretext_preview_layout_marginTop"
+        android:text="@string/home_scoretext_preview"
+        android:textColor="@color/black"
+        android:textSize="@dimen/home_scoretext_preview_textSize"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/home_scoretext_preview"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@id/home_scoretext_preview"
+        android:text="@string/home_scoretext_per"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/home_scoretext_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/home_scoretext_preview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/home_scoretext_selector"
+        android:clickable="true"
+        android:text="@string/home_scoretext_start"
+        android:textColor="@color/white"
+        android:textSize="@dimen/home_scoretext_start_textSize" />
+
+</RelativeLayout>
